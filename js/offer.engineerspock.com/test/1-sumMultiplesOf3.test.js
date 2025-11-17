@@ -1,5 +1,5 @@
-import sumMultiplesOf3 from "../1.js";
-import { describe, it, setup } from "mocha";
+import sumMultiplesOf3 from "../1-sumMultiplesOf3.js";
+import { describe, it } from "mocha";
 import { expect } from "chai";
 
 describe("sumMultiplesOf3", function () {

@@ -1,4 +1,4 @@
-import getUniqueItems from "../4.js";
+import getUniqueItems from "../4-getUniqueItems.js";
 import { describe, it } from "mocha";
 import { expect } from "chai";
 

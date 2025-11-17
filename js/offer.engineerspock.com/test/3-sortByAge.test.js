@@ -1,4 +1,4 @@
-import sortByAge from "../3.js";
+import sortByAge from "../3-sortByAge.js";
 import { describe, it } from "mocha";
 import { expect } from "chai";
 

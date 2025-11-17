@@ -14,11 +14,11 @@ if ([lang, dir, name, fn].some((arg) => typeof arg === "undefined"))
 
 const destDir = `${lang}/${dir}`;
 const files = [
-	`${destDir}/${name}.${lang}`,
-	`${destDir}/${testDir}/${name}.test.${lang}`,
+	`${destDir}/${name}-${fn}.${lang}`,
+	`${destDir}/${testDir}/${name}-${fn}.test.${lang}`,
 ];
 
-console.log(`Creating the files at ${files.join(" and ")} at 2 seconds`);
+console.log(`Creating the files at ${files.join(" and ")} in 2 seconds`);
 files.forEach((file) => {
 	if (fs.existsSync(file)) {
 		console.warn(`Warning: ${file} already exists, will rewrite it`);
@@ -35,7 +35,7 @@ function ${fn}() {
 
 export default ${fn};
 `;
-const testContent = `import ${fn} from "../${name}.js";
+const testContent = `import ${fn} from "../${name}-${fn}.js";
 import { describe, it } from "mocha";
 import { expect } from "chai";
 

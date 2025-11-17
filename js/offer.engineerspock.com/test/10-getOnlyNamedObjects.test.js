@@ -1,4 +1,4 @@
-import getOnlyNamedObjects from "../10.js";
+import getOnlyNamedObjects from "../10-getOnlyNamedObjects.js";
 import { describe, it } from "mocha";
 import { expect } from "chai";
 

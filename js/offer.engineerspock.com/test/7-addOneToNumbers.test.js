@@ -1,4 +1,4 @@
-import addOneToNumbers from "../7.js";
+import addOneToNumbers from "../7-addOneToNumbers.js";
 import { describe, it } from "mocha";
 import { expect } from "chai";
 

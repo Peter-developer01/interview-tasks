@@ -1,4 +1,4 @@
-import isAnagram from "../8.js";
+import isAnagram from "../8-isAnagram.js";
 import { describe, it } from "mocha";
 import { expect } from "chai";
 

@@ -1,4 +1,4 @@
-import reverseString from "../2.js";
+import reverseString from "../2-reverseString.js";
 import { describe, it } from "mocha";
 import { expect } from "chai";
 

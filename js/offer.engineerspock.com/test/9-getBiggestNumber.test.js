@@ -1,4 +1,4 @@
-import getBiggestNumber from "../9.js";
+import getBiggestNumber from "../9-getBiggestNumber.js";
 import { describe, it } from "mocha";
 import { expect } from "chai";
 

@@ -1,4 +1,4 @@
-import vowelCount from "../6.js";
+import vowelCount from "../6-vowelCount.js";
 import { describe, it } from "mocha";
 import { expect } from "chai";
 

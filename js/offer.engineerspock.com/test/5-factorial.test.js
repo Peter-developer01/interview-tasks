@@ -1,4 +1,4 @@
-import factorial from "../5.js";
+import factorial from "../5-factorial.js";
 import { describe, it } from "mocha";
 import { expect } from "chai";
 

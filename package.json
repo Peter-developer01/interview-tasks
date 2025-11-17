@@ -1,0 +1,24 @@
+{
+    "name": "interview-tasks",
+    "version": "1.0.0",
+    "description": "Solving Full Stack interview tasks",
+    "homepage": "https://github.com/Peter-developer01/interview-tasks#readme",
+    "bugs": {
+        "url": "https://github.com/Peter-developer01/interview-tasks/issues"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/Peter-developer01/interview-tasks.git"
+    },
+    "license": "ISC",
+    "author": "Peter-developer01",
+    "type": "module",
+    "main": "index.js",
+    "scripts": {
+        "test": "./node_modules/mocha/bin/mocha.js **/*.test.js"
+    },
+    "devDependencies": {
+        "chai": "^6.2.1",
+        "mocha": "^11.7.5"
+    }
+}

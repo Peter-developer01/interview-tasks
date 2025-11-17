@@ -4,6 +4,7 @@
 
 import minimist from "minimist";
 import fs from "node:fs";
+import fse from "fs-extra";
 
 // Get an object with the CLI arguments. I use minimist because it's easy to use
 const args = minimist(process.argv.slice(2));
@@ -13,8 +14,8 @@ if ([lang, dir, name, fn].some((arg) => typeof arg === "undefined"))
 
 const destDir = `${lang}/${dir}`;
 const files = [
-	`${destDir}/${name}.js`,
-	`${destDir}/${testDir}/${name}.test.js`,
+	`${destDir}/${name}.${lang}`,
+	`${destDir}/${testDir}/${name}.test.${lang}`,
 ];
 
 console.log(`Creating the files at ${files.join(" and ")} at 2 seconds`);
@@ -44,8 +45,13 @@ describe("${fn}", function () {
     });
 });
 `;
-fs.writeFileSync(solutionFile, solutionContent);
-fs.writeFileSync(testFile, testContent);
+if (lang === "js") {
+	await fse.outputFile(solutionFile, solutionContent);
+	await fse.outputFile(testFile, testContent);
+} else {
+	await fse.outputFile(solutionFile, "");
+	await fse.outputFile(testFile, "");
+}
 console.log(`Successfully created ${files.join(" and ")}`);
 
 function wait(ms) {

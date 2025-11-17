@@ -2,4 +2,4 @@
 
 In this directory I solve tasks from offer.engineerspock.com.
 
-> Fun fact: a few years ago I have studied on Engineer Spock's Python and C# courses!
+> Fun fact: a few years ago, as of the time of writing this, I have studied on Engineer Spock's Python and C# courses!

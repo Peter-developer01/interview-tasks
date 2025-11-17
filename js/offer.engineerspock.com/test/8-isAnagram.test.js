@@ -8,7 +8,7 @@ describe("isAnagram", function () {
 		expect(isAnagram("vain", "Ivan")).to.equal(true);
 		expect(isAnagram("program", "margorp")).to.equal(true);
 		expect(isAnagram("country", "city")).to.equal(false);
-		// I choose true for empty strings, because an empty string, in fact, has all the characters of an empty string.
+		// I chose true for empty strings, because an empty string, in fact, has all the characters of an empty string.
 		expect(isAnagram("", "")).to.equal(true);
 	});
 });
